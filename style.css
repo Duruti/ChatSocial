@@ -1,10 +1,16 @@
-*, ::before::after{
+*, ::before, ::after{
    box-sizing: border-box;
 }
 a{
    text-decoration: none;
    color: black;
   
+}
+.container button{
+   outline: 0;
+   border: 0;
+   padding: 0;
+   cursor: pointer;
 }
 body{
    margin: 0;
@@ -14,7 +20,8 @@ body{
 
 }
 .container{
-   box-sizing: border-box;
+   overflow: hidden;
+
    position: relative;
    margin: 50px auto;
    display: flex;
@@ -27,7 +34,6 @@ body{
    border-radius: 10px;
 }
 .menu{
-   box-sizing: border-box;
    width: 100%;
    padding: 5px 10px;
    height: 50px;
@@ -37,7 +43,6 @@ body{
    border-bottom: solid 1px;
    border-color: rgb(172, 172, 172);
    background-color: #fff;
-   border-radius: 10px 10px 0 0  ;
 }
 .container img{
    width: 30px;
@@ -73,6 +78,7 @@ body{
    border-bottom: solid 1px ;
    border-color: rgb(172, 172, 172);
    padding: 10px 0;
+   overflow: hidden;
 }
 /* Alignement */
 .containerCard{
@@ -88,7 +94,6 @@ body{
 
 }
 .card{
-   box-sizing: border-box;
    width: 50%;
    display: flex;
 }
@@ -114,13 +119,16 @@ body{
 .photo2{
    background-image: url(images/image2.jpg);
 }
+.photo3{
+   background-image: url(images/image3.jpg);
+}
 .text{
-   box-sizing: border-box;
    width: 100%;
    margin-left: 10px;
    padding: 10px 10px;
    background-color: chocolate;
    border-radius: 10px;
+   line-height: 1.5;
 }
 
 /* Controler */
@@ -132,14 +140,13 @@ body{
    display: flex;
    align-items: center;
    justify-content: space-around;
-   border-radius: 0 0 10px 10px;
 
 }
+
 .inputControl{
    background-color: #fff;
 
    width: 90%;
-   box-sizing: border-box;
    display: flex;
    align-items: center;
    justify-content: space-around;
@@ -150,11 +157,12 @@ body{
 }
 #inputMessage{
    background-color: #fff;
-
    width: 70%;
    padding: 15px 5px;
    margin: 0;
    outline: 0;
    border: 0;
    font-size: 16px;
+   resize: none;
+   height: 50px;
 }

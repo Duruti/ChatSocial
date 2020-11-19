@@ -13,14 +13,14 @@
       
       <!-- Navigation -->
       <nav class="menu">
-         <a class="back" href="#"><img src="svg/001-back.svg" alt="back"> Back</a>
+         <button class="back" id= "btnBack"><img src="svg/001-back.svg" alt="back"> Back</button>
          <div class="profil">
             <div class="name">Duruti Codeur</div>
             <div class="status">En ligne</div>
          </div>
          <div class="interaction">
-            <a> <img src="svg/002-phone.svg" alt="phone"></a>
-            <a><img src="svg/006-video-camera.svg" alt="video camera"></a>
+            <button id="btnPhone"><img src="svg/002-phone.svg" alt="phone"></button>
+            <button><img id="btnCamera" src="svg/006-video-camera.svg" alt="video camera"></button>
          </div>
       </nav>
    
@@ -40,25 +40,25 @@
          </div>
          <div class="containerCard left">
             <div class="card left">
-               <div class="photo photo1"></div>
+               <div class="photo photo3"></div>
                <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
             </div>
          </div>
          <div class="containerCard right">
             <div class="card right">
                <div class="photo photo2"></div>
-               <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
+               <div class="text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, alias. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
             </div>
          </div>
       </div>
       <!-- Control -->
       <div class="control">
-         <div class="inputControl">
-         <a href="#"> <img src="svg/003-clip.svg" alt="join"></a>
-         <input type="text" id="inputMessage">
-         <a href="#"> <img src="svg/004-happiness.svg" alt="smiley"></a>
-         <a href="#"> <img src="svg/005-send.svg" alt="send"></a>
-         </div>
+         <form class="inputControl">
+         <button id="btnJoin"> <img src="svg/003-clip.svg" alt="join"></button>
+         <textarea id="inputMessage" placeholder="Entrez votre texte">tr</textarea>
+         <button id="btnSmiley"> <img src="svg/004-happiness.svg" alt="smiley"></button>
+         <button id="btnSend"> <img src="svg/005-send.svg" alt="send"></button>
+         </form>
       </div>
    </div>
 </body>
