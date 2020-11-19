@@ -11,6 +11,8 @@ a{
    border: 0;
    padding: 0;
    cursor: pointer;
+   background-color: #fff;
+
 }
 body{
    margin: 0;
