@@ -1,39 +1,69 @@
-*, ::before, ::after{
-   box-sizing: border-box;
+
+
+.logoChat{
+   position: absolute;
+   right: 50px;
+   bottom: 50px;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: rgba(184, 182, 182, 0.835);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.5s ease-in-out;
+   
+   
 }
-a{
-   text-decoration: none;
-   color: black;
-  
+.logoChat img{
+   width: 70%;
+   
+   
 }
+
 .container button{
    outline: 0;
    border: 0;
    padding: 0;
    cursor: pointer;
    background-color: #fff;
-
+   
 }
-body{
-   margin: 0;
-   padding: 0;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background-color: #e7e6e6;
 
-}
 .container{
+   
    overflow: hidden;
-
-   position: relative;
-   margin: 50px auto;
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   margin: 0px auto;
    display: flex;
    justify-content: start;
    flex-direction: column;
    align-items: center;
-   width: 500px;
-   /* height: 600px; */
+   max-width: 500px;
+   max-height: 600px;
    background-color: #fff;
    border-radius: 10px;
+   transition: 0.5s ease-in-out;
+   scale: 1;
+}
+.hidden{
+   display: none;
+}
+
+.container img{
+   width: 30px;
+}
+.anim_out{
+   transform-origin: bottom right;
+   transform: scale(0);
+}
+.anim_in{
+   /* transform-origin: center; */
+   transform: scale(1);
+   transition: 0.5s ease-in-out 0.5s;
+
 }
 .menu{
    width: 100%;
@@ -45,9 +75,6 @@ body{
    border-bottom: solid 1px;
    border-color: rgb(172, 172, 172);
    background-color: #fff;
-}
-.container img{
-   width: 30px;
 }
 .back {
    display: flex;
@@ -67,11 +94,13 @@ body{
 }
 .interaction{
    display: flex;
-   width: 70px;
-   justify-content: space-between;
+   /* width: 70px; */
+   justify-content: space-around;
    cursor: pointer;
 }
-
+.interaction button{
+   margin: 0 5px;
+}
 /* card dialog  */
 
 .chat{
@@ -79,8 +108,10 @@ body{
    height: 500px;
    border-bottom: solid 1px ;
    border-color: rgb(172, 172, 172);
+   /* overflow: hidden; */
+   overflow:scroll;
+   overflow-x: hidden;
    padding: 10px 0;
-   overflow: hidden;
 }
 /* Alignement */
 .containerCard{
@@ -103,7 +134,7 @@ body{
    background-color: rgb(235, 235, 235);
 }
 .card.right :nth-child(2){
-   background-color: rgb(183, 234, 243);
+   background-color:#d4edf5;
 }
 .photo{
    margin: 10px;
@@ -124,12 +155,34 @@ body{
 .photo3{
    background-image: url(images/image3.jpg);
 }
-.text{
+.message{
    width: 100%;
    margin-left: 10px;
    padding: 10px 10px;
-   background-color: chocolate;
    border-radius: 10px;
+}
+.profilCard{
+   padding: 0;
+   margin: 0;
+   margin-bottom: 10px;
+   line-height: 1.2;
+}
+.profilCard p{
+   margin: 0;
+   padding: 0;
+}
+.nameCard{
+   font-size: 16px;
+   font-weight: bold;
+   color: rgb(78, 78, 78);
+}
+.timeCard{
+   font-size: 14px;
+   font-weight: 400;
+   color: rgb(50, 50, 50);
+}
+.text{
+   background-color: chocolate;
    line-height: 1.5;
 }
 
@@ -167,4 +220,14 @@ body{
    font-size: 16px;
    resize: none;
    height: 50px;
+}
+@media screen and (max-width : 500px){
+   .container{
+      position: static;
+      margin: 0;
+      height: auto;
+   }
+   .card{
+      width: 90%;
+   }
 }

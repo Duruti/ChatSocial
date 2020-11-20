@@ -3,13 +3,27 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="chat.css">
    <title>chat Social</title>
 
 </head>
 <body>
-   
-   <div class="container">
+   <div class="title">
+      <div class="headerTitle">
+         <h1>Chat Rit <img src="svg/rire.svg"></img></h1>
+      </div>
+      
+      <h2>Le réseau social du rire</h2>
+   </div>
+
+
+
+   <div class="logoChat">
+      <img src="svg/chat.svg" alt="chat">
+   </div>
+
+   <div class="container hidden">
       
       <!-- Navigation -->
       <nav class="menu">
@@ -20,7 +34,8 @@
          </div>
          <div class="interaction">
             <button id="btnPhone"><img src="svg/002-phone.svg" alt="phone"></button>
-            <button><img id="btnCamera" src="svg/006-video-camera.svg" alt="video camera"></button>
+            <button  id="btnCamera"><img src="svg/006-video-camera.svg" alt="video camera"></button>
+            <button id="btnClose"><img  src="svg/close.svg" alt="video camera"></button>
          </div>
       </nav>
    
@@ -29,25 +44,49 @@
          <div class="containerCard left">
             <div class="card left">
                <div class="photo photo1"></div>
-               <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
+               <div class="message">
+                  <div class="profilCard">
+                     <p class="nameCard">Gencyl Tony</p>
+                     <p class = "timeCard"> 20/11 18:15</p>
+                  </div>
+                  <div class="text">Bienvenue moi c'est Tony et j'aime bien les blagues carambar</div>
+               </div>
             </div>
          </div>
          <div class="containerCard right">
             <div class="card right">
                <div class="photo photo2"></div>
-               <div class="text">sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
+               <div class="message">
+                  <div class="profilCard">
+                     <p class="nameCard">Danloss Ella</p>
+                     <p class = "timeCard"> 20/11 18:15</p>
+                  </div>
+                  <div class="text">sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
+               </div>
             </div>
          </div>
          <div class="containerCard left">
             <div class="card left">
                <div class="photo photo3"></div>
-               <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
+               <div class="message">
+                  <div class="profilCard">
+                     <p class="nameCard">Delphine Talaron</p>
+                     <p class = "timeCard"> 20/11 18:15</p>
+                  </div>
+                  <div class="text">sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
+               </div>
             </div>
          </div>
          <div class="containerCard right">
             <div class="card right">
                <div class="photo photo2"></div>
-               <div class="text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, alias. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
+               <div class="message">
+                  <div class="profilCard">
+                     <p class="nameCard">Danloss Ella</p>
+                     <p class = "timeCard"> 20/11 18:15</p>
+                  </div>
+                  <div class="text">sit amet consectetur, adipisicing elit. Vitae, eveniet?</div>
+               </div>
             </div>
          </div>
       </div>
@@ -61,5 +100,8 @@
          </form>
       </div>
    </div>
+
+   <!-- JavaScript  -->
+   <script src="main.js"></script>
 </body>
 </html>
