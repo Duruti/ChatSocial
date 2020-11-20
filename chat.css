@@ -60,6 +60,7 @@
    transform: scale(0);
 }
 .anim_in{
+   transform-origin: bottom right;
    /* transform-origin: center; */
    transform: scale(1);
    transition: 0.5s ease-in-out 0.5s;
