@@ -224,9 +224,11 @@
 }
 @media screen and (max-width : 500px){
    .container{
-      position: static;
+      position: absolute;
+      bottom: 0;
+
       margin: 0;
-      height: auto;
+      height: 100vh;
    }
    .card{
       width: 90%;
