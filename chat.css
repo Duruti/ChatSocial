@@ -226,10 +226,11 @@
    .container{
       position: absolute;
       bottom: 0;
-
+      right: 0;
       margin: 0;
       padding: 0;
-      height: auto;
+     
+      /* height: 100vh; */
    }
    .card{
       width: 90%;
