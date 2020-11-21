@@ -1,11 +1,35 @@
 
 
+.smileyGrid{
+   position: absolute;
+   bottom: 70px;
+   right: 20px;
+   width: 150px;
+   height: 200px;
+   background-color:rgba(184, 182, 182, 0.835);
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: repeat(4,1fr);
+   align-items: center;
+   justify-items: center;
+   border-radius: 5px;
+}
+.smiley{
+   font-size: 180%;
+   cursor: pointer;
+}
+.smiley p{
+   margin: 0;
+   padding: 0;
+
+}
+
 .logoChat{
    position: absolute;
-   right: 50px;
-   bottom: 50px;
-   width: 80px;
-   height: 80px;
+   right: 4vw;
+   bottom: 4vh;
+   width: 70px;
+   height: 70px;
    border-radius: 50%;
    background-color: rgba(184, 182, 182, 0.835);
    display: flex;
@@ -214,7 +238,7 @@
 #inputMessage{
    background-color: #fff;
    width: 70%;
-   padding: 15px 5px;
+   padding: 10px 5px;
    margin: 0;
    outline: 0;
    border: 0;
